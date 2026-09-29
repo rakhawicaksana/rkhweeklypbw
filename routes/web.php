@@ -7,17 +7,30 @@ Route::get('/', function () {
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('profile',[
+        "title" => "Profile",
+        "name" => "wayan rakha",
+        "nim" => "13242520048",
+        "prodi" => "teknologi informasi",
+        "gambar" => "rakha2.jpg",
+
+    ]);
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact',[
+        "title" => "Contact",
+    ]);
 });
 
 Route::get('/berita', function () {
-    return view('berita');
+    return view('berita',[
+        "title" => "Berita",
+    ]);
 });
 
 Route::get('/home', function () {
-    return view('home');
+    return view('home',[
+        "title" => "Home",
+    ]);
 });

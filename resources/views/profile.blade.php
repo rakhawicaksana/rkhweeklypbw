@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <title>profil</title>
-</head>
-<body>
+
+    @extends('layouts.main')
+
+    @section('content')
     <h1>Halaman Profil</h1>
     <p>
-        Nama : Rakha <br>
-        Prodi : TI <br>
-    <script src="js/alert.js"></script>
-    <img src="images/rakha2.jpg" alt="">
-</body>
-</html>
+        Nama : {{ $name }} <br>
+        NIM  : {{ $nim }} <br>
+        Prodi : {{ $prodi }} <br>
+        <img src="images/{{ $gambar }}" width="200px"></img>
+    
+    @endsection
+    
